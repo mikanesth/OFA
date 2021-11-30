@@ -1,0 +1,6 @@
+input[type=number] {
+    border-radius: 50px;
+    box-shadow: 3px 1px 1px rgba(0,0,0,0.3);
+    width: 4vw;
+    
+}

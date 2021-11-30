@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.sass">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <h1>Protocole OFA</h1>
-    <label for="taille-input">Taille (en cm)</label>
-    <input type="number" name="taille" id="taille-input" placeholder="180">
-    <label for="poids-input">Poids (en Kg)</label>
-    <label for="poids-input">Poids (en Kg)</label>
-    <input type="number" name="poids" id="poids-input" placeholder="70">
-    <label for="women-radio">Femme</label>
-    <input type="radio" name="sexe" id="women-radio">
-    <label for="men-radio">Homme</label>
-    <input type="radio" name="sexe" id="men-radio">
-    <input type="submit" value="test">
-    <div id="text">placeholder</div>
+        <form name="POFA">
+            <label for="taille-input">Taille (en cm)</label>
+            <input required type="number" min="100" max="220" name="taille" id="taille-input" placeholder="180">
+
+            <label for="poids-input">Poids (en Kg)</label>
+            <input required type="number" min="30" max="220" name="poids" id="poids-input" placeholder="70">
+
+            <label for="women-radio">Femme</label>
+            <input required type="radio" name="sexe" id="women-radio">
+
+            <label for="men-radio">Homme</label>
+            <input required type="radio" name="sexe" id="men-radio">
+        
+            <input type="submit" value="test">
+        </form>
+        
+        <div id="text"></div>
+        <div id="dosesPOFA"></div>
 </body>
 <script src="./index.js"></script>
 </html>
