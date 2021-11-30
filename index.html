@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.sass">
 </head>
 <body>
     <h1>Protocole OFA</h1>
-    <p>Département anesthésie réanimation</p>
-    <p>CHU Nîmes</p>
+    <label for="taille-input">Taille (en cm)</label>
+    <input type="number" name="taille" id="taille-input" placeholder="180">
+    <label for="poids-input">Poids (en Kg)</label>
+    <label for="poids-input">Poids (en Kg)</label>
+    <input type="number" name="poids" id="poids-input" placeholder="70">
+    <label for="women-radio">Femme</label>
+    <input type="radio" name="sexe" id="women-radio">
+    <label for="men-radio">Homme</label>
+    <input type="radio" name="sexe" id="men-radio">
+    <input type="submit" value="test">
+    <div id="text">placeholder</div>
 </body>
+<script src="./index.js"></script>
 </html>
