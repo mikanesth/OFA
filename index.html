@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Protocole OFA</h1>
+    <div class="jumbo">
+        <h1>Protocole OFA</h1>
+    </div>
         <form name="POFA">
-            <label for="taille-input">Taille (en cm)</label>
-            <input required type="number" min="100" max="220" name="taille" id="taille-input" placeholder="180">
+            <div class="taille-container">
+                <label for="taille-input">Taille (en cm)</label>
+                <input required type="number" min="100" max="220" name="taille" id="taille-input" placeholder="180">
+            </div>
+            
 
             <label for="poids-input">Poids (en Kg)</label>
             <input required type="number" min="30" max="220" name="poids" id="poids-input" placeholder="70">
